@@ -10,6 +10,7 @@ const JoinForm = ({ username, setUsername, room, setRoom, handleJoin }) => (
         value={username}
         onChange={(e) => setUsername(e.target.value)}
         required
+        
       />
       <input
         type="text"
