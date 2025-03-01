@@ -17,7 +17,18 @@ const Body = (props) => {
 
       {!props.joined ? (
         <>
-          <Typography variant="h3" align="center" gutterBottom sx={{ marginTop: 13, color: 'Black', fontWeight: 600 }} >
+          <Typography variant="h4" align="center" gutterBottom
+            sx={{
+              marginTop: 13,
+              color: "#0077ff",
+              fontWeight: 800,
+              textShadow: "0 0 5px white, 0 0 10px #0077ff, 0 0 20px #0077ff, 0 0 40px rgba(0,119,255,0.9)"
+            }}
+          >
+            Welcome To Friend Talk!
+          </Typography>
+
+          <Typography variant="h3" align="center" gutterBottom sx={{ fontWeight: 600 }} >
             Talk to strangers, Make friends!
           </Typography>
           <Typography variant="h6" align="center" color="text.secondary" gutterBottom sx={{ color: 'white', fontWeight: 600 }}>

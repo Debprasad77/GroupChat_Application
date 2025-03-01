@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/logo.png'; // Import the logo image
 import { Box, Container, Typography, Grid, Link, IconButton } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -20,9 +21,19 @@ const Footer = () => {
         <Grid container spacing={3} alignItems="center">
           {/* Logo and Name */}
           <Grid item xs={12} sm={4} sx={{ textAlign: { xs: 'center', sm: 'left' } }}>
-            <Typography variant="h5" component="span" sx={{ fontWeight: 'bold' }}>
-              Random Chat
-            </Typography>
+            <Box sx={{ flexGrow: 1, ml: -10, display: "flex"}}>
+              <img
+                src={logo}
+                alt="Logo"
+                style={{
+                  height: "60px", // to make the logo bigger
+                  maxHeight: "100%", // Prevent it from exceeding the Navbar height
+                  width: "auto", // Maintain aspect ratio
+                  objectFit: "contain", // Prevent stretching
+                  borderRadius: "5%", // Make it a circle
+                }}
+              />
+            </Box>
           </Grid>
 
           {/* Navigation Links */}
@@ -36,7 +47,7 @@ const Footer = () => {
             <Link href="#" color="inherit" sx={{ mx: 1, textDecoration: 'none' }}>
               Community Guidelines
             </Link>
-            
+
           </Grid>
 
           {/* Social Media Icons */}
