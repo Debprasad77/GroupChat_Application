@@ -50,6 +50,8 @@ This is a web application that connects people from around the world for random 
 - Enjoy real-time messaging!
 
 ## 📸 Screenshots
+![Screenshot 2025-03-01 003625](https://github.com/user-attachments/assets/c379574f-c8b5-42fe-a3b8-b2759fd931e0)
+
 ![image](https://github.com/user-attachments/assets/35416428-ce75-4c7a-8da4-c012e40d1626)
 
 
