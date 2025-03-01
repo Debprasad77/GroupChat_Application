@@ -5,9 +5,12 @@ const ChatWindow = ({ messages, users, socket, room, username, setJoined }) => {
   const messagesEndRef = useRef(null);
 
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
+    const messagesDiv = messagesEndRef.current?.parentElement;
+    if (messagesDiv) {
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
+    }
   };
-
+  
   useEffect(scrollToBottom, [messages]);
 
   const handleSend = (e) => {
@@ -27,16 +30,28 @@ const ChatWindow = ({ messages, users, socket, room, username, setJoined }) => {
     setJoined(false); // Reset the joined state to show the JoinForm
   };
 
+  //Test
+
+
+
+
+
+
+//
+
   return (
     <div className="chat-container">
       <div className="sidebar">
         <h3>Room: {room}</h3>
         <h4>Users ({users.length})</h4>
         <ul>
-          {users.map((user, index) => (
-            <li key={index}>{user}</li>
-          ))}
-        </ul>
+        {users.map((user, index) => (
+          <li key={index}>
+            {user}
+            <span className="user-status" /> {/* Green dot for online status */}
+          </li>
+        ))}
+      </ul>
         <button className="leave-button" onClick={handleLeaveRoom}>
           Leave Room
         </button>

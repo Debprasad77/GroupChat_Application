@@ -1,55 +1,52 @@
 .body-container {
-    flex: 1;
-    padding: 20px 0 !important;
-  }
-  
-  .options-grid {
-    margin-top: 20px !important;
-  }
-  
-  .option-card {
-    height: 100%;
-    transition: transform 0.2s;
-  }
-  
-  .option-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .start-button {
-    margin-top: 10px !important;
-    width: 100%;
-  }
-  
-  .feature-card {
-    text-align: center;
-    background-color: #1e1e1e;
-    color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
-  }
-  
-  .feature-card:hover {
-    transform: scale(1.05);
-  }
+  flex: 1;
+  padding: 20px 0 !important;
+}
 
-  .testimonial-card {
-    transition: transform 0.3s ease;
-  }
-  
-  .testimonial-card:hover {
-    transform: scale(1.05);
-  }
-  
-  
+.options-grid {
+  margin-top: 20px !important;
+}
+
+.option-card {
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+.option-card:hover {
+  transform: translateY(-5px);
+}
+
+.start-button {
+  margin-top: 10px !important;
+  width: 100%;
+}
+
+.feature-card {
+  text-align: center;
+  background-color: #1e1e1e;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-card {
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05);
+}
 
 
 
-  
 
-  /* Join Form Styles */
-  /* .join-container {
+/* Join Form Styles */
+/* .join-container {
     background: #ffffff;
     padding: 2rem;
     border-radius: 10px;
@@ -82,213 +79,250 @@
   }
  */
 
-  .join-container {
-    background: blueviolet;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 100%;
-  
-  }
-  .join-container h2{
-    margin-bottom: 35px;
-    text-align: center;
-    color: yellow;
-  }
-  
-  .join-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .join-container input {
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .join-container button {
-    padding: 0.8rem;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  /* Chat Window Styles */
-  
-  .chat-container {
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-    display: flex;
-    width: 100%;
-    max-width: 1200px;
-    height: 80vh;
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
-  
-  .sidebar {
-    width: 250px;
-    background: #f8f9fa;
-    padding: 1rem;
-    border-right: 1px solid #ddd;
-  }
-  
-  .sidebar ul {
-    list-style: none;
-    margin-top: 1rem;
-  }
-  
-  .sidebar li {
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
-    background: #e9ecef;
-  }
-  
-  .main-chat {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .messages {
-    flex: 1;
-    padding: 1rem;
-    overflow-y: auto;
-  }
-  
-  .message {
-    margin-bottom: 1rem;
-    padding: 0.8rem;
-    border-radius: 10px;
-    max-width: 50%;
-  }
-  
-  .message.sent {
-    background: #007bff;
-    color: white;
-    margin-left: auto;
-  }
-  
-  .message.received {
-    background: #e9ecef;
-    margin-right: auto;
-  }
-  
-  .message .user {
-    font-weight: bold;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-    display: block;
-  }
-  
-  .message .time {
-    font-size: 0.7rem;
-    opacity: 0.7;
-    display: block;
-    margin-top: 0.5rem;
-  }
-  
-  .main-chat form {
-    display: flex;
-    padding: 1rem;
-    border-top: 1px solid #ddd;
-    gap: 1rem;
-  }
-  
-  .main-chat input {
-    flex: 1;
-    padding: 0.8rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
-  .main-chat button {
-    padding: 0.8rem 1.5rem;
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .leave-button {
-    padding: 0.8rem;
-    background: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    width: 100%;
-    margin-top: 1rem;
-  }
-  
-  .leave-button:hover {
-    background: #c82333;
-  }
-  /* Add other chat window styles as needed */
+.join-container {
+  background: blueviolet;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
 
- 
+}
+
+.join-container h2 {
+  margin-bottom: 35px;
+  text-align: center;
+  color: yellow;
+}
+
+.join-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.join-container input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.join-container button {
+  padding: 0.8rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+
+
+
+/* Chat Window Styles */
+
+.chat-container {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+  width: 250px;
+  background: #f8f9fa;
+  padding: 1rem;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.sidebar li {
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  background: #e9ecef;
+}
+
+.main-chat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.message {
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+.message.sent {
+  background: #007bff;
+  color: white;
+  margin-left: auto;
+}
+
+.message.received {
+  background: #e9ecef;
+  margin-right: auto;
+}
+
+.message .user {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.message .time {
+  font-size: 0.7rem;
+  opacity: 0.7;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+.main-chat form {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  gap: 1rem;
+}
+
+.main-chat input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.main-chat button {
+  padding: 0.8rem 1.5rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.leave-button {
+  padding: 0.8rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.leave-button:hover {
+  background: #c82333;
+}
+
+/* Green Light Button(Active Users) */
+.user-status {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(8, 182, 8);
+  border-radius: 50%;
+  margin-left: 8px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.95);
+    opacity: 0.7;
+  }
+}
+
 
 /* Blurred background */
 .blur-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    backdrop-filter: blur(5px); /* Blur effect */
-    z-index: 100; /* Ensure it's above other content */
-  }
-  
-  /* Pop-up container */
-  .popup-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Center the pop-up */
-    background: blueviolet;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    z-index: 101; /* Ensure it's above the blurred background */
-    width: 400px; /* Adjust width as needed */
-    max-width: 90%; /* Ensure it doesn't overflow on small screens */
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent black */
+  backdrop-filter: blur(5px);
+  /* Blur effect */
+  z-index: 100;
+  /* Ensure it's above other content */
+}
 
-  
-  /* Close button for the pop-up */
-  
-  .close-popup-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 2.5rem;
-    cursor: pointer;
-    color: orangered;
-    padding: 0;
-    line-height: 1;
-  }
-  
-  .close-popup-button:hover {
-    color: #333; /* Darker color on hover */
-  }
-
-  
+/* Pop-up container */
+.popup-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center the pop-up */
+  background: blueviolet;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 101;
+  /* Ensure it's above the blurred background */
+  width: 400px;
+  /* Adjust width as needed */
+  max-width: 90%;
+  /* Ensure it doesn't overflow on small screens */
+}
 
 
-  /* TEST */
+/* Close button for the pop-up */
+
+.close-popup-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: orangered;
+  padding: 0;
+  line-height: 1;
+}
+
+.close-popup-button:hover {
+  color: #333;
+  /* Darker color on hover */
+}
 
 
- 
+
+
+/* TEST */

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Typography, Grid,Box, Card, CardContent, Button } from "@mui/material";
+import { Container, Typography, Grid, Box, Card, CardContent, Button } from "@mui/material";
 import { Chat, Videocam, PersonAdd, Tag, Shield, Star } from "@mui/icons-material";
 
 
@@ -234,7 +234,7 @@ const Body = (props) => {
               backgroundColor: "rgb(149, 131, 243)",
               borderRadius: "30px",
               padding: 4,
-              
+
             }}
           >
             <Grid item xs={12}>
@@ -304,111 +304,58 @@ const Body = (props) => {
           </Grid>
 
 
-          {/* <Box
-      sx={{
-        background: 'linear-gradient(90deg, #6f3dd2 0%, #4c23aa 100%)',
-        borderRadius: '30px',
-        color: 'white',
-        padding: 4,
-        marginTop: 5,
-        marginBottom: 5,
-        textAlign: 'left'
-      }}
-    >
-      <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: 1 }}>
-        Stay in the loop
-      </Typography>
-      <Typography variant="body1" sx={{ marginBottom: 3}}>
-        Join our Discord Server to get updates before anyone else.
-      </Typography>
-      <Grid container justifyContent="right" spacing={2}>
-        <Grid item>
-          <Button
-            variant="contained"
+          <Box
             sx={{
-              backgroundColor: 'white',
-              color: '#4c23aa',
+              background: 'linear-gradient(90deg, #6f3dd2 0%, #4c23aa 100%)',
               borderRadius: '30px',
-              fontWeight: 'bold',
-              '&:hover': {
-                backgroundColor: '#f1f1f1'
-              }
-            }}
-          >
-            Join Discord
-          </Button>
-        </Grid>
-        <Grid item>
-          <Button
-            variant="outlined"
-            sx={{
               color: 'white',
-              borderColor: 'white',
-              borderRadius: '30px',
-              fontWeight: 'bold',
-              '&:hover': {
-                backgroundColor: 'rgba(255, 255, 255, 0.1)'
-              }
+              padding: 4,
+              marginTop: 5,
+              marginBottom: 5
             }}
           >
-            Contact Us
-          </Button>
-        </Grid>
-      </Grid>
-    </Box> */}
-
-<Box
-  sx={{
-    background: 'linear-gradient(90deg, #6f3dd2 0%, #4c23aa 100%)',
-    borderRadius: '30px',
-    color: 'white',
-    padding: 4,
-    marginTop: 5,
-    marginBottom: 5
-  }}
->
-  <Grid container alignItems="center" justifyContent="space-between">
-    <Grid item>
-      <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
-        Stay in the loop
-      </Typography>
-      <Typography variant="body1">
-        Join our Discord Server to get updates before anyone else.
-      </Typography>
-    </Grid>
-    <Grid item>
-      <Button
-        variant="contained"
-        sx={{
-          backgroundColor: 'white',
-          color: '#4c23aa',
-          borderRadius: '30px',
-          fontWeight: 'bold',
-          marginRight: 2,
-          '&:hover': {
-            backgroundColor: '#f1f1f1'
-          }
-        }}
-      >
-        Join Discord
-      </Button>
-      <Button
-        variant="outlined"
-        sx={{
-          color: 'white',
-          borderColor: 'white',
-          borderRadius: '30px',
-          fontWeight: 'bold',
-          '&:hover': {
-            backgroundColor: 'rgba(255, 255, 255, 0.1)'
-          }
-        }}
-      >
-        Contact Us
-      </Button>
-    </Grid>
-  </Grid>
-</Box>
+            <Grid container alignItems="center" justifyContent="space-between">
+              <Grid item>
+                <Typography variant="h4" sx={{ fontWeight: 'bold' }}>
+                  Stay in the loop
+                </Typography>
+                <Typography variant="body1">
+                  Join our Discord Server to get updates before anyone else.
+                </Typography>
+              </Grid>
+              <Grid item>
+                <Button
+                  variant="contained"
+                  sx={{
+                    backgroundColor: 'white',
+                    color: '#4c23aa',
+                    borderRadius: '30px',
+                    fontWeight: 'bold',
+                    marginRight: 2,
+                    '&:hover': {
+                      backgroundColor: '#f1f1f1'
+                    }
+                  }}
+                >
+                  Join Discord
+                </Button>
+                <Button
+                  variant="outlined"
+                  sx={{
+                    color: 'white',
+                    borderColor: 'white',
+                    borderRadius: '30px',
+                    fontWeight: 'bold',
+                    '&:hover': {
+                      backgroundColor: 'rgba(255, 255, 255, 0.1)'
+                    }
+                  }}
+                >
+                  Contact Us
+                </Button>
+              </Grid>
+            </Grid>
+          </Box>
 
 
 
