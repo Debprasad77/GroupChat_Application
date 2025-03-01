@@ -24,7 +24,7 @@ This is a web application that connects people from around the world for random 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/Debprasad77/CodeClauseInternship.git
+    git clone https://github.com/Debprasad77/RandomChat_Application.git
     cd random-chat-app
     ```
 
