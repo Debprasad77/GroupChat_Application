@@ -1,7 +1,7 @@
 
 ---
 
-# Random Chat Web Application
+# Group Chat Web Application
 
 This is a web application that connects people from around the world for random one-on-one chat sessions. The application is designed to provide an anonymous and seamless chatting experience, enabling users to meet and interact with new people effortlessly.
 
