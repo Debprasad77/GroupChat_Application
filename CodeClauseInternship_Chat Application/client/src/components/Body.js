@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Container, Typography, Grid, Box, Card, CardContent, Button } from "@mui/material";
 import { Chat, Videocam, PersonAdd, Tag, Shield, Star } from "@mui/icons-material";
 
-
-
 import JoinForm from './joinForm';
 import ChatWindow from './ChatWindow';
 import './Body.css';

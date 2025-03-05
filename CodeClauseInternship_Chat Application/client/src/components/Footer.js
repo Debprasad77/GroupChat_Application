@@ -3,14 +3,16 @@ import logo from '../assets/logo.png'; // Import the logo image
 import { Box, Container, Typography, Grid, Link, IconButton } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedIn from '@mui/icons-material/LinkedIn';
+
 import DiscordIcon from '@mui/icons-material/SportsEsports'; // Using this as a placeholder for Discord
-import TikTokIcon from '@mui/icons-material/MusicNote'; // Using this as a placeholder for TikTok
 
 const Footer = () => {
   return (
     <Box
       component="footer"
       sx={{
+        position: 'relative',
         backgroundColor: 'rgb(57, 53, 78)', // Dark background
         color: 'white',
         py: 3,
@@ -21,7 +23,7 @@ const Footer = () => {
         <Grid container spacing={3} alignItems="center">
           {/* Logo and Name */}
           <Grid item xs={12} sm={4} sx={{ textAlign: { xs: 'center', sm: 'left' } }}>
-            <Box sx={{ flexGrow: 1, ml: -10, display: "flex"}}>
+            <Box sx={{ flexGrow: 1, ml: -10, display: "flex", cursor: 'pointer'}} onClick={() => (window.location.href = "/")}>
               <img
                 src={logo}
                 alt="Logo"
@@ -52,17 +54,17 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <Grid item xs={12} sm={2} sx={{ textAlign: { xs: 'center', sm: 'right' } }}>
-            <IconButton href="#" target="_blank" sx={{ color: 'white' }}>
+            <IconButton href="https://www.instagram.com/debprasad33/" target="_blank" sx={{ color: 'white' }}>
               <InstagramIcon />
             </IconButton>
-            <IconButton href="#" target="_blank" sx={{ color: 'white' }}>
+            <IconButton href="https://x.com/Debprasad77" target="_blank" sx={{ color: 'white' }}>
               <TwitterIcon />
             </IconButton>
             <IconButton href="#" target="_blank" sx={{ color: 'white' }}>
               <DiscordIcon />
             </IconButton>
-            <IconButton href="#" target="_blank" sx={{ color: 'white' }}>
-              <TikTokIcon />
+            <IconButton href="https://www.linkedin.com/in/debprasad77/" target="_blank" sx={{ color: 'white' }}>
+              <LinkedIn />
             </IconButton>
           </Grid>
         </Grid>
